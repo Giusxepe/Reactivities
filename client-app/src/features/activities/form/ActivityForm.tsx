@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { Button, Form, Segment } from "semantic-ui-react";
 import { useStore } from "../../../app/stores/store";
 import { observer } from "mobx-react-lite";
@@ -9,7 +9,7 @@ import {v4 as uuid} from 'uuid';
 export default observer(function ActivityForm(){
 
     const {activityStore} = useStore();
-    const {selectedActivity, createActivity, updateActivity, loading, loadActivity, loadingInitial} = activityStore;
+    const {createActivity, updateActivity, loading, loadActivity, loadingInitial} = activityStore;
     const {id} = useParams();
     const navigate = useNavigate()
     ;

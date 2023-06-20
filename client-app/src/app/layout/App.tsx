@@ -8,7 +8,7 @@ import HomePage from '../../features/home/HomePage';
 function App() { 
   return (
     <>
-      {location.pathname === '/' ? <HomePage/> :(
+      {window.location.pathname === '/' ? <HomePage/> :(
       <>
         <NavBar/>
           <Container style={{marginTop:'7em'}}>
